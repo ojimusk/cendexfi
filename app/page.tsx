@@ -1,24 +1,36 @@
-import Badge from "@/components/ui/Badge";
-import Button from "@/components/ui/Button";
+import Header from "@/components/layout/Header";
+import BottomNav from "@/components/layout/BottomNav";
 import Card from "@/components/ui/Card";
-import Input from "@/components/ui/Input";
+import Button from "@/components/ui/Button";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#0B0B0B] p-6 text-white">
-      <h1 className="mb-2 text-4xl font-bold">Cendex</h1>
+    <main className="min-h-screen bg-[#0B0B0B] px-5 pb-24 pt-4 text-white">
+      <Header />
 
-      <Badge>Beta</Badge>
+      <section className="mt-6">
+        <Card>
+          <p className="text-sm text-[#A0A0A0]">
+            Total Balance
+          </p>
 
-      <Card>
-        <p className="mb-4">Welcome to Cendex.</p>
+          <h2 className="mt-2 text-3xl font-bold">
+            $25,420.35
+          </h2>
 
-        <Input placeholder="Wallet Address" />
+          <p className="mt-2 text-[#00D084]">
+            +$482.12 Today
+          </p>
 
-        <div className="mt-4">
-          <Button>Connect Wallet</Button>
-        </div>
-      </Card>
+          <div className="mt-6">
+            <Button className="w-full">
+              Start Trading
+            </Button>
+          </div>
+        </Card>
+      </section>
+
+      <BottomNav />
     </main>
   );
 }
