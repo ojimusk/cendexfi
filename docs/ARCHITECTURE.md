@@ -1,4 +1,4 @@
-# Cendex Architecture
+# Cendex
 
 ## Frontend
 
@@ -9,7 +9,7 @@
 
 ## Backend
 
-- Hyperliquid API
+- Hyperliquid
 - Supabase
 
 ## Deployment
@@ -17,9 +17,10 @@
 - GitHub
 - Vercel
 
-## Design Principles
+## Principles
 
 - Mobile First
-- Clean
 - Fast
-- Reusable Components
+- Beautiful
+- Simple
+- Reusable
