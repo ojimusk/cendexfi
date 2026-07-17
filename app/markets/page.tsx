@@ -1,5 +1,6 @@
 import Header from "@/components/layout/Header";
 import BottomNav from "@/components/layout/BottomNav";
+import MarketRow from "@/components/dashboard/MarketRow";
 
 export default function MarketsPage() {
   return (
@@ -23,8 +24,51 @@ export default function MarketsPage() {
 
         <input
           placeholder="Search market..."
-          className="w-full rounded-xl border border-[#2A2A2A] bg-[#151515] px-4 py-3 outline-none"
+          className="w-full rounded-xl border border-[#252525] bg-[#151515] px-4 py-3 outline-none"
         />
+
+      </section>
+
+      <section className="mt-8">
+
+        <h2 className="mb-3 text-lg font-semibold">
+          Trading Pairs
+        </h2>
+
+        <div className="space-y-3">
+
+          <MarketRow
+            symbol="BTC/USDT"
+            price="$118,240"
+            change="+2.45%"
+          />
+
+          <MarketRow
+            symbol="ETH/USDT"
+            price="$3,840"
+            change="+1.28%"
+          />
+
+          <MarketRow
+            symbol="SOL/USDT"
+            price="$192.35"
+            change="-0.84%"
+            positive={false}
+          />
+
+          <MarketRow
+            symbol="XRP/USDT"
+            price="$2.91"
+            change="+4.10%"
+          />
+
+          <MarketRow
+            symbol="DOGE/USDT"
+            price="$0.42"
+            change="+8.52%"
+          />
+
+        </div>
 
       </section>
 
