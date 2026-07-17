@@ -86,6 +86,39 @@ export default function TradePage() {
   </div>
 
 </Card>
+      <div className="mt-6">
+
+  <h2 className="mb-3 text-lg font-semibold">
+    Open Positions
+  </h2>
+
+  <Card>
+
+    <div className="flex items-center justify-between">
+      <div>
+        <p className="font-semibold">
+          BTC/USDT Long
+        </p>
+
+        <p className="mt-1 text-sm text-[#A0A0A0]">
+          Entry: $117,850
+        </p>
+      </div>
+
+      <div className="text-right">
+        <p className="font-semibold text-[#00D084]">
+          +$390
+        </p>
+
+        <p className="text-sm text-[#00D084]">
+          +2.1%
+        </p>
+      </div>
+    </div>
+
+  </Card>
+
+</div>
       </section>
 
       <BottomNav />
