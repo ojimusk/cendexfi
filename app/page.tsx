@@ -6,7 +6,7 @@ import Button from "@/components/ui/Button";
 
 import StatsCard from "@/components/dashboard/StatsCard";
 import QuickAction from "@/components/dashboard/QuickAction";
-import MarketCard from "@/components/dashboard/MarketCard";
+import TradingPairCard from "@/components/trade/TradingPairCard";
 
 export default function Home() {
   return (
@@ -84,38 +84,31 @@ export default function Home() {
 
       </section>
 
-      {/* Market Overview */}
+      {/* Trading Pairs */}
       <section className="mt-8">
 
         <h2 className="mb-3 text-lg font-semibold">
-          Market Overview
+          Trading Pairs
         </h2>
 
         <div className="space-y-3">
 
-          <MarketCard
-            symbol="BTC"
+          <TradingPairCard
+            pair="BTC/USDT"
             price="$118,240"
             change="+2.45%"
           />
 
-          <MarketCard
-            symbol="ETH"
-            price="$6,450"
+          <TradingPairCard
+            pair="ETH/USDT"
+            price="$3,840"
             change="+1.28%"
           />
 
-          <MarketCard
-            symbol="SOL"
-            price="$192.35"
-            change="-0.84%"
-            positive={false}
-          />
-
-          <MarketCard
-            symbol="XRP"
-            price="$2.91"
-            change="+4.10%"
+          <TradingPairCard
+            pair="SOL/USDT"
+            price="$182"
+            change="+5.91%"
           />
 
         </div>
