@@ -22,31 +22,70 @@ export default function TradePage() {
       <section className="mt-6">
         <Card>
 
-          <div className="flex justify-between">
-            <span>Pair</span>
-            <span>BTC/USDT</span>
-          </div>
+  <div className="flex justify-between">
+    <span>Pair</span>
+    <span>BTC/USDT</span>
+  </div>
 
-          <div className="mt-4 flex justify-between">
-            <span>Price</span>
-            <span>$118,240</span>
-          </div>
+  <div className="mt-4 flex justify-between">
+    <span>Price</span>
+    <span>$118,240</span>
+  </div>
 
-          <div className="mt-6">
-            <Button className="w-full">
-              Buy / Long
-            </Button>
-          </div>
+  <div className="mt-6">
+    <label className="mb-2 block text-sm text-[#A0A0A0]">
+      Order Type
+    </label>
 
-          <div className="mt-3">
-            <Button
-              className="w-full bg-red-600 hover:bg-red-500"
-            >
-              Sell / Short
-            </Button>
-          </div>
+    <select className="w-full rounded-xl border border-[#2A2A2A] bg-[#111111] p-3">
+      <option>Market</option>
+      <option>Limit</option>
+    </select>
+  </div>
 
-        </Card>
+  <div className="mt-4">
+    <label className="mb-2 block text-sm text-[#A0A0A0]">
+      Amount (USDT)
+    </label>
+
+    <input
+      type="number"
+      placeholder="100"
+      className="w-full rounded-xl border border-[#2A2A2A] bg-[#111111] p-3"
+    />
+  </div>
+
+  <div className="mt-4">
+    <label className="mb-2 block text-sm text-[#A0A0A0]">
+      Leverage
+    </label>
+
+    <input
+      type="range"
+      min="1"
+      max="100"
+      defaultValue="10"
+      className="w-full"
+    />
+
+    <p className="mt-2 text-sm text-[#A0A0A0]">
+      10x
+    </p>
+  </div>
+
+  <div className="mt-6">
+    <Button className="w-full">
+      Buy / Long
+    </Button>
+  </div>
+
+  <div className="mt-3">
+    <Button className="w-full bg-red-600 hover:bg-red-500">
+      Sell / Short
+    </Button>
+  </div>
+
+</Card>
       </section>
 
       <BottomNav />
